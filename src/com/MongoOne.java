@@ -33,8 +33,8 @@ public class MongoOne {
         for (String name : dbJipeng.getCollectionNames()) {
             System.out.println("jipeng - collectionName: " + name);
         }
-        DBCollection users = dbJipeng.getCollection("user");
-      //查询所有的数据
+        DBCollection users = dbJipeng.getCollection("userinfo");
+        //查询所有的数据
         DBCursor cur = users.find();
         while (cur.hasNext()) {
             System.out.println(cur.next());
